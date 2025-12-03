@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 import os
-from tdm import tqdm
+from tqdm import tqdm
 
 def gray_img(img_path):
     """
@@ -658,7 +658,7 @@ if __name__ == "__main__":
     
     try:
         # 5장의 이미지를 스티칭
-        panorama = stitch_multiple_images(image_paths, output_path, max_images=3)
+        panorama = stitch_multiple_images(image_paths, output_path, max_images=10)
         
         if panorama is not None:
             print("\n✓ 스티칭 완료!")
