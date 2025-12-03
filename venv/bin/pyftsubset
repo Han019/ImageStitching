@@ -1,0 +1,7 @@
+#!/Users/hanseungheon/Desktop/25-2/비전/panorama/venv/bin/python
+import sys
+from fontTools.subset import main
+if __name__ == '__main__':
+    if sys.argv[0].endswith('.exe'):
+        sys.argv[0] = sys.argv[0][:-4]
+    sys.exit(main())
